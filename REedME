@@ -1,0 +1,4 @@
+http://localhost:8080/app/signup?id=1&name=mahdi&lastname=yaghoobi&birthday=1363&email=eml&username=mahdi&password=yaghoobi
+http://localhost:8080/app/user?username=mahdi&password=yaghoobi&email=m.y@g.c
+http://localhost:8080/app/profile?id=1&name=mahdi&lastname=yaghoobi&birthday=1363&email=eml
+http://localhost:8080/app/password/recovery?email=eml&username=mahdi
