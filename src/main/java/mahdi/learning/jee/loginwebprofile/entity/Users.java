@@ -8,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @Data
 @EqualsAndHashCode
-@ToString
 @Builder
 public class Users {
 
@@ -18,6 +17,7 @@ public class Users {
     private String username;
     private String password;
     private String email;
+    private String securityKey;
 //    @OneToOne(targetEntity = Users.class )
 //    @OneToOne(targetEntity = Users.class , mappedBy = "profile")
 //    @JoinColumn(name = "profileid")
@@ -28,5 +28,6 @@ public class Users {
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "profile_id", referencedColumnName = "profileId")
+    @ToString.Exclude
     private Profile profile;
 }

@@ -9,6 +9,7 @@ import mahdi.learning.jee.loginwebprofile.dto.UserDto;
 import mahdi.learning.jee.loginwebprofile.entity.MyEntityManager;
 import mahdi.learning.jee.loginwebprofile.entity.Profile;
 import mahdi.learning.jee.loginwebprofile.entity.Users;
+import mahdi.learning.jee.loginwebprofile.security.UtilSecurity;
 
 public class SignUpService {
     @Inject
@@ -16,7 +17,10 @@ public class SignUpService {
     @Inject
     private ProfileDao profileDao;
 
-    public void add(ProfileDto profileDto, UserDto userDto) {
+    @Inject
+    private UtilSecurity security;
+
+    public void add(ProfileDto profileDto, UserDto userDto) throws Exception {
         EntityManager entityManager = MyEntityManager.getEntityManager();
 
         entityManager.getTransaction().begin();
@@ -30,9 +34,14 @@ public class SignUpService {
         );
         entityManager.getTransaction().commit();
 
+        String txtSecurityKey = security.randomTextGenerator(16);
+
         entityManager.getTransaction().begin();
         Users user = entityManager.merge(Users.builder().username(userDto.getUsername())
-                .password(userDto.getPassword())
+                        .securityKey(txtSecurityKey)
+                .password(
+                        security.encrypt(
+                        userDto.getPassword(),txtSecurityKey))
                 .email(userDto.getEmail())
                 .profile(profile)
                 .build());

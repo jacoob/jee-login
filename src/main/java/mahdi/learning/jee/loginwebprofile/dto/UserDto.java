@@ -1,5 +1,6 @@
 package mahdi.learning.jee.loginwebprofile.dto;
 
+import jakarta.persistence.Transient;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -15,4 +16,6 @@ public class UserDto {
     private String password;
     private String email;
     private ProfileDto profileDto;
+    @Transient
+    private String txtSecurityKey;
 }

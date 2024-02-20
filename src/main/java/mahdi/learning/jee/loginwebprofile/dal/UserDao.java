@@ -38,7 +38,23 @@ public class UserDao {
                 .setParameter("username", userDto.getUsername())
                 .setParameter("email", userDto.getEmail())
                 .getSingleResult();
-                return UserDto.builder().password(users1.getPassword()).email(users1.getEmail()).build();
+                return UserDto.builder().password(users1.getPassword()).email(users1.getEmail()).txtSecurityKey(users1.getSecurityKey()).build();
 
+    }
+
+    public UserDto getByUsernameAndPassword(UserDto userDto){
+        EntityManager entityManager = MyEntityManager.getEntityManager();
+        TypedQuery<Users> query = entityManager.createQuery("select u from Users  u where u.username=:username AND u.password=:passwprd",Users.class );
+        Users user1 = query.setParameter("username",userDto.getUsername())
+                .setParameter("password",userDto.getPassword()).getSingleResult();
+        return UserDto.builder().password(user1.getPassword()).email(user1.getEmail()).build();
+
+    }
+
+    public UserDto getByUserName(String username) {
+        EntityManager entityManager = MyEntityManager.getEntityManager();
+        TypedQuery<Users> query = entityManager.createQuery("select u from Users  u where u.username=:username",Users.class );
+        Users user1 = query.setParameter("username",username).getSingleResult();
+        return UserDto.builder().username(user1.getUsername()).password(user1.getPassword()).txtSecurityKey(user1.getSecurityKey()).email(user1.getEmail()).build();
     }
 }

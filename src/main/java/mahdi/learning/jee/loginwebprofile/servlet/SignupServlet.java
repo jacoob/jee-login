@@ -7,10 +7,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import mahdi.learning.jee.loginwebprofile.bl.SignUpService;
-import mahdi.learning.jee.loginwebprofile.bl.UserService;
 import mahdi.learning.jee.loginwebprofile.dto.ProfileDto;
 import mahdi.learning.jee.loginwebprofile.dto.UserDto;
-import mahdi.learning.jee.loginwebprofile.entity.Profile;
 
 import java.io.IOException;
 
@@ -32,7 +30,11 @@ public class SignupServlet extends HttpServlet {
                 .email(req.getParameter("email"))
                 .build();
 
-        signUpService.add(profileDto,userDto);
+        try {
+            signUpService.add(profileDto,userDto);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
     }
 

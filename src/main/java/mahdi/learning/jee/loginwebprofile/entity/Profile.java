@@ -23,5 +23,6 @@ public class Profile {
 //    @OneToOne(targetEntity = Users.class)
 //    @JoinColumn(name = "userid")
     @OneToOne(mappedBy = "profile")
+    @ToString.Exclude
     private Users user;
 }
