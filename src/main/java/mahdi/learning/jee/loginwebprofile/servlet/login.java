@@ -25,6 +25,10 @@ public class login extends HttpServlet {
                 .password(req.getParameter("password"))
                 .build();
         UserDto userDto1 = userService.getUserByUsernamePassword(userDto);
+        if(userDto1!=null && !userDto1.equals(null)){
+            req.getSession().setAttribute("sessionId",req.getSession().getId());
+            req.getSession().setAttribute("user",userDto);
+        }
 
         PrintWriter out = resp.getWriter();
         out.println("user" + userDto1.getUsername() + " is logged in" + userDto1.getTxtSecurityKey());

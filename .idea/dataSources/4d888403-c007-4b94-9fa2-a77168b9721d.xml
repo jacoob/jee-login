@@ -11,9 +11,9 @@
 4||10|c|G
 4||10|C|G
 4||10|T|G</Grants>
-      <IntrospectionStateNumber>933</IntrospectionStateNumber>
+      <IntrospectionStateNumber>992</IntrospectionStateNumber>
       <ServerVersion>16.0</ServerVersion>
-      <StartupTime>1706853209</StartupTime>
+      <StartupTime>1708665236</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -1409,7 +1409,7 @@ false posixrules
 13212||10|C|G
 13212||-9223372036854775808|U|G
 13212||10|U|G</Grants>
-      <IntrospectionStateNumber>933</IntrospectionStateNumber>
+      <IntrospectionStateNumber>992</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4828,90 +4828,141 @@ false posixrules
     <schema id="263" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>933</IntrospectionStateNumber>
+      <IntrospectionStateNumber>992</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>524</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
     <table id="264" parent="263" name="profile">
-      <ObjectId>25015</ObjectId>
-      <StateNumber>925</StateNumber>
+      <ObjectId>49159</ObjectId>
+      <StateNumber>989</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="265" parent="263" name="sequence">
+    <table id="265" parent="263" name="scope">
+      <ObjectId>49166</ObjectId>
+      <StateNumber>990</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="266" parent="263" name="sequence">
       <ObjectId>24964</ObjectId>
       <StateNumber>895</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="266" parent="263" name="test">
+    <table id="267" parent="263" name="test">
       <ObjectId>24581</ObjectId>
       <StateNumber>752</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="267" parent="263" name="users">
-      <ObjectId>25008</ObjectId>
-      <StateNumber>925</StateNumber>
+    <table id="268" parent="263" name="users">
+      <ObjectId>49152</ObjectId>
+      <StateNumber>989</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="268" parent="264" name="profileid">
+    <column id="269" parent="264" name="profileid">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>924</StateNumber>
+      <StateNumber>987</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="269" parent="264" name="birthday">
+    <column id="270" parent="264" name="birthday">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>924</StateNumber>
+      <StateNumber>987</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="270" parent="264" name="lastname">
+    <column id="271" parent="264" name="lastname">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
-      <StateNumber>924</StateNumber>
+      <StateNumber>987</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="271" parent="264" name="name">
+    <column id="272" parent="264" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
-      <StateNumber>924</StateNumber>
+      <StateNumber>987</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="272" parent="264" name="profile_pkey">
+    <index id="273" parent="264" name="profile_pkey">
       <ColNames>profileid</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25020</ObjectId>
+      <ObjectId>49164</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>924</StateNumber>
+      <StateNumber>987</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="273" parent="264" name="profile_pkey">
+    <key id="274" parent="264" name="profile_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25021</ObjectId>
+      <ObjectId>49165</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>924</StateNumber>
-      <UnderlyingIndexId>25020</UnderlyingIndexId>
+      <StateNumber>987</StateNumber>
+      <UnderlyingIndexId>49164</UnderlyingIndexId>
     </key>
-    <column id="274" parent="265" name="seq_name">
+    <column id="275" parent="265" name="id">
+      <DasType>bigint|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>988</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="276" parent="265" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>988</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="277" parent="265" name="user_userid">
+      <DasType>bigint|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>988</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <foreign-key id="278" parent="265" name="fk_scope_user_userid">
+      <ColNames>user_userid</ColNames>
+      <ObjectId>49176</ObjectId>
+      <RefColNames>userid</RefColNames>
+      <RefColPositions>1</RefColPositions>
+      <StateNumber>990</StateNumber>
+      <RefTableId>49152</RefTableId>
+      <RefTableName>users</RefTableName>
+      <RefTableKind>table</RefTableKind>
+    </foreign-key>
+    <index id="279" parent="265" name="scope_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>49169</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>988</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="280" parent="265" name="scope_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>49170</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>988</StateNumber>
+      <UnderlyingIndexId>49169</UnderlyingIndexId>
+    </key>
+    <column id="281" parent="266" name="seq_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>895</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="275" parent="265" name="seq_count">
+    <column id="282" parent="266" name="seq_count">
       <DasType>numeric(38)|0s</DasType>
       <Position>2</Position>
       <StateNumber>895</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <index id="276" parent="265" name="sequence_pkey">
+    <index id="283" parent="266" name="sequence_pkey">
       <ColNames>seq_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24967</ObjectId>
@@ -4923,27 +4974,27 @@ false posixrules
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="277" parent="265" name="sequence_pkey">
+    <key id="284" parent="266" name="sequence_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24968</ObjectId>
       <Primary>1</Primary>
       <StateNumber>895</StateNumber>
       <UnderlyingIndexId>24967</UnderlyingIndexId>
     </key>
-    <column id="278" parent="266" name="id">
+    <column id="285" parent="267" name="id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>752</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="279" parent="266" name="name">
+    <column id="286" parent="267" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>752</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="280" parent="266" name="test_pkey">
+    <index id="287" parent="267" name="test_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24584</ObjectId>
@@ -4952,69 +5003,75 @@ false posixrules
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="281" parent="266" name="test_pkey">
+    <key id="288" parent="267" name="test_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>24585</ObjectId>
       <Primary>1</Primary>
       <StateNumber>752</StateNumber>
       <UnderlyingIndexId>24584</UnderlyingIndexId>
     </key>
-    <column id="282" parent="267" name="userid">
+    <column id="289" parent="268" name="userid">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="283" parent="267" name="email">
+    <column id="290" parent="268" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="267" name="password">
+    <column id="291" parent="268" name="password">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="285" parent="267" name="username">
+    <column id="292" parent="268" name="securitykey">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="286" parent="267" name="profile_id">
-      <DasType>bigint|0s</DasType>
+    <column id="293" parent="268" name="username">
+      <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="294" parent="268" name="profile_id">
+      <DasType>bigint|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>986</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="287" parent="267" name="fk_users_profile_id">
+    <foreign-key id="295" parent="268" name="fk_users_profile_id">
       <ColNames>profile_id</ColNames>
-      <ObjectId>25022</ObjectId>
+      <ObjectId>49171</ObjectId>
       <RefColNames>profileid</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <StateNumber>925</StateNumber>
-      <RefTableId>25015</RefTableId>
+      <StateNumber>989</StateNumber>
+      <RefTableId>49159</RefTableId>
       <RefTableName>profile</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="288" parent="267" name="users_pkey">
+    <index id="296" parent="268" name="users_pkey">
       <ColNames>userid</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25013</ObjectId>
+      <ObjectId>49157</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>923</StateNumber>
+      <StateNumber>986</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="289" parent="267" name="users_pkey">
+    <key id="297" parent="268" name="users_pkey">
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25014</ObjectId>
+      <ObjectId>49158</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>923</StateNumber>
-      <UnderlyingIndexId>25013</UnderlyingIndexId>
+      <StateNumber>986</StateNumber>
+      <UnderlyingIndexId>49157</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
