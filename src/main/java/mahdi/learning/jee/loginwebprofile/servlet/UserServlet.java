@@ -2,8 +2,6 @@ package mahdi.learning.jee.loginwebprofile.servlet;
 
 import jakarta.inject.Inject;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebFilter;
-import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;

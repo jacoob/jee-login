@@ -18,7 +18,9 @@ public class RecoverPasswordServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-       UserDto userDto =  userService.getUserByEmailUsername(UserDto.builder().username(req.getParameter("username")).email(req.getParameter("email")).build());
-       resp.getWriter().println("send this password "+ userDto.getPassword() +" to: " + userDto.getEmail());
+        UserDto userDto = userService.getUserByEmailUsername(UserDto.builder().username(req.getParameter("username")).email(req.getParameter("email")).build());
+//        resp.getWriter().println("username : "+userDto.getUsername() + ", password "+ userDto.getPassword());
+        req.setAttribute("msg", userDto.getPassword());
+        req.getRequestDispatcher("general1.jsp").forward(req, resp);
     }
 }

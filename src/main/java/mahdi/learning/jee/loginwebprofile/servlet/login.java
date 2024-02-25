@@ -28,5 +28,9 @@ public class login extends HttpServlet {
 
         PrintWriter out = resp.getWriter();
         out.println("user" + userDto1.getUsername() + " is logged in" + userDto1.getTxtSecurityKey());
+        req.getSession().setAttribute("user",userDto1);
+        req.getSession().setAttribute("sessionId",req.getSession().getId());
+        req.setAttribute("msg", "user is logged in");
+        req.getRequestDispatcher("general.jsp").forward(req,resp);
     }
 }
