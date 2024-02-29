@@ -10,22 +10,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30829b88-c411-44e4-80d8-80888c7b96c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/ScopeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/ScopeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dto/ScopeDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/UserScope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/filter/LoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/scope/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/ScopeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/profile.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d888403-c007-4b94-9fa2-a77168b9721d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d888403-c007-4b94-9fa2-a77168b9721d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d888403-c007-4b94-9fa2-a77168b9721d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4d888403-c007-4b94-9fa2-a77168b9721d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/C1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/C2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/C3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/F1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/IC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/controller/MyBaseResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dto/Dto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/framwork/MyContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/framwork/MyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/framwork/MyScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/MyDispatcherServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REedME" beforeDir="false" afterPath="$PROJECT_DIR$/REedME" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/HelloApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/HelloResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/ProfileService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/ScopeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/SignUpService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/ProfileDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/ScopeDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dto/ProfileDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dto/ScopeDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/MyEntityManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/Profile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/Scope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/UserScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/entity/Users.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/filter/LoginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/scope/Scope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/security/UtilSecurity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/LogoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/ProfileServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/RecoverPasswordServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/ScopeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/SignupServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/login.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +62,7 @@
       <list>
         <option value="Jsp File" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -58,19 +84,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "fw",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="GlassFish 7.0.11" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 7.0.11" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -181,44 +207,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/SignupServlet.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/SignUpService.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/RecoverPasswordServlet.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/UserDao.java</url>
           <line>40</line>
           <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/UserService.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/login.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/UserService.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/bl/UserService.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/dal/UserDao.java</url>
@@ -226,24 +217,19 @@
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/login.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/ScopeServlet.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/ScopeServlet.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/filter/LoginFilter.java</url>
           <line>18</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/servlet/MyDispatcherServlet.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mahdi/learning/jee/loginwebprofile/framwork/MyContextListener.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
