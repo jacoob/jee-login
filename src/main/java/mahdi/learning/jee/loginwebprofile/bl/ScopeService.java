@@ -14,7 +14,7 @@ public class ScopeService {
         scopeDao.insertScope(dto);
     }
 
-    public List<ScopeDto> findScopeByUserName(ScopeDto scopeDto){
-        return scopeDao.getScopeByUsername(scopeDto);
+    public List<ScopeDto> findScopeByName(ScopeDto scopeDto){
+        return scopeDao.getScopeByName(scopeDto);
     }
 }

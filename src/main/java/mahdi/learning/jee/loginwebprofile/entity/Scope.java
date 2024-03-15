@@ -15,7 +15,4 @@ public class Scope {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
-
-    @ManyToOne
-    private Users user ;
 }
